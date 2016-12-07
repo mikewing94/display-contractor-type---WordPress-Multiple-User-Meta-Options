@@ -5,6 +5,7 @@
   $quality= 'contractors_quality_shes';
   $opsupport = 'contractors_operational_support';
   $manufacturing = 'contractor_manufacturing';
+  $none = "N/A";
 
   $single = true;
   $contractor = get_user_meta( $user_id, $bussupport, $single );
@@ -18,7 +19,10 @@
   echo "</br>";
 
   echo "<h4>";
-  if ($contractor == "N/A"){
+  if ($contractor == $none){
+  }
+
+  elseif ($contractor == '') {
   }
 
   else {
@@ -27,7 +31,10 @@
       echo "</br>";
   }
 
-  if ($contractor2 == "N/A"){
+  if ($contractor2 == $none){
+  }
+
+  elseif ($contractor2 == '') {
   }
 
   else {
@@ -36,7 +43,10 @@
       echo "</br>";
   }
 
-  if ($contractor3 == "N/A"){
+  if ($contractor3 == $none){
+  }
+
+  elseif ($contractor3 == '') {
   }
 
   else {
@@ -45,7 +55,10 @@
       echo "</br>";
   }
 
-  if ($contractor4 == "N/A"){
+  if ($contractor4 == $none){
+  }
+
+  elseif ($contractor4 == '') {
   }
 
   else {
@@ -54,7 +67,10 @@
       echo "</br>";
   }
 
-  if ($contractor5 == "N/A"){
+  if ($contractor5 == $none){
+  }
+
+  elseif ($contractor5 == '') {
   }
 
   else {
